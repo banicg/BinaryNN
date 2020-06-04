@@ -21,9 +21,10 @@ namespace BinaryNN
 
         static void Main(string[] args)
         {
-            new ToyMapSpaceSquare().Run();
+            //new ToyMapSpaceSquare().Run();
             //new ToyFindSolution().Run();            
-            //new ToySolveXOR().Run();
+            //new ToySolveXOR { SmallToy = 0 }.Run();
+            new ToySolveXOR { SmallToy = 1 }.Run();
         }
     }
 

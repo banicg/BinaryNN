@@ -8,9 +8,10 @@ namespace BinaryNN
     {
         static Func<int, bool> RndInit = (i) => Randomizer.NextDouble() > 0.5;
 
+        public int SmallToy { get; set; } = 1;
+
         public void Run( )
         {
-            int smallToy = 1;
 
             var szIn = 0;
             var szHid = 0;
@@ -19,7 +20,7 @@ namespace BinaryNN
             Dictionary<int, int> truthTable = new Dictionary<int, int>();
 
 
-            if (smallToy == 0)
+            if (SmallToy == 0)
             {
                 szIn = 2;
                 szHid = 3;
@@ -29,7 +30,7 @@ namespace BinaryNN
                 truthTable.Add(0b01, 0b1);
                 truthTable.Add(0b00, 0b0);
             }
-            else if (smallToy == 1)
+            else if (SmallToy == 1)
             {
                 szIn = 5;
                 szHid = 11;
